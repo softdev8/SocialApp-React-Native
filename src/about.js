@@ -45,10 +45,7 @@ export default class About extends Component{
                     });
                 })
 
-            
-           
-            
-             this.setState({
+           this.setState({
                     loading:false,
                     dataSource: this.state.dataSource.cloneWithRows(messages.reverse())
 
