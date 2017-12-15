@@ -6,6 +6,7 @@ import {
 } from 'react-native';
 import Camera from 'react-native-camera'
 
+// Camra option
 export default Camera = (props) => {
    return (
       <View style = {styles.container}>
