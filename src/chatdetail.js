@@ -47,6 +47,7 @@ const uploadImage = (uri, mime = 'application/octet-stream') => {
     })
   })
 }
+
 export default class Chatdetail extends Component{
     constructor(props) {
         super(props);
@@ -177,7 +178,6 @@ renderRow(rowData, sectionID, rowID) {
                     </View>
           )
       }
-
     }
     sendmessage(){
         var user;
