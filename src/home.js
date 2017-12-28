@@ -120,8 +120,7 @@ export default class Home extends Component {
               this.props.navigator.push({
              name:'Login'
          })
-         })
-        
+      })  
     }
     right(){
         this.props.navigator.push({
