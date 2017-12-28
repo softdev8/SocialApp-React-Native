@@ -22,4 +22,3 @@ or
 $ react-native run-ios
 ```
 
-### CopyRight in 10, Oct, 2017
