@@ -20,12 +20,12 @@ export default class About extends Component{
         super(props);
 
         this.state = {
-                loading:false,
-                dataSource: new ListView.DataSource({
+            loading:false,
+            dataSource: new ListView.DataSource({
 
-                rowHasChanged: (row1, row2) => row1 !== row2
+            rowHasChanged: (row1, row2) => row1 !== row2
 
-                })
+            })
 
         };
 
