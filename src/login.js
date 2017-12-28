@@ -31,7 +31,6 @@ export default class Login extends Component {
             email: "",
             password: "",            
         };
-   
     }
 
     async login(){      
@@ -43,8 +42,6 @@ export default class Login extends Component {
                                  this.props.navigator.push({
                                     name:"Home"
                                  })
-                                   
-                            
                         })
                         .catch((error) => {
                             var errorCode = error.code;
@@ -98,11 +95,6 @@ export default class Login extends Component {
                     
                 </Image>
                 );
-    
-        
-        
-    
-
   }
   Moveto(){     
       this.props.navigator.push({
