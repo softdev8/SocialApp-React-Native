@@ -26,7 +26,6 @@ export default class Chat extends Component{
             </Image>
         );
     }
-  
     
     left(){
        this.props.navigator.push({
