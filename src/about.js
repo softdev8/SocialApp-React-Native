@@ -74,7 +74,6 @@ export default class About extends Component{
         </TouchableOpacity>
 
         )
-
     }
 
     render() {
