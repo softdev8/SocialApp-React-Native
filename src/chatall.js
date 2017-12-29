@@ -23,9 +23,7 @@ export default class Chatall extends Component{
                 dataSource: new ListView.DataSource({
                 rowHasChanged: (row1, row2) => row1 !== row2
                 })
-
-        };
-        
+        };        
      }
     componentWillMount() {
        var uid=firebase.auth().currentUser.uid;
@@ -45,10 +43,8 @@ export default class Chatall extends Component{
            this.setState({
                loading:false,
                     dataSource: this.state.dataSource.cloneWithRows(messages)
-            }); 
-            
-        }.bind(this));
-           
+            });             
+        }.bind(this));           
     }
     render(){
          if (!this.state.loading) { 
@@ -102,11 +98,9 @@ export default class Chatall extends Component{
                             </TouchableOpacity>
                             <Image source={{uri:rowData._val.url}} style={{width:40,height:40,borderRadius:20,marginRight:10}}/>         
 
-                        </View>
-           
+                        </View>         
 
-                    )
-                
+                    )                
     }
      goto(x){
         // alert(x._key)
