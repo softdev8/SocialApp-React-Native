@@ -9,6 +9,7 @@ import {
 } from 'react-native'
 import firebase from 'firebase';
 import NavigationBar from 'react-native-navigation-bar';
+
 export default class Chat extends Component{
    constructor(props){
       super(props)
