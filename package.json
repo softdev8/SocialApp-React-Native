@@ -8,7 +8,7 @@
     "android-dev": "adb reverse tcp:8081 tcp:8081 && react-native run-android"
   },
   "dependencies": {
-    "firebase": "^3.6.4",
+    "firebase": "^4.8.0",
     "react": "15.4.1",
     "react-native": "0.39.2",
     "react-native-camera": "^0.4.0",
