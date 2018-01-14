@@ -1,7 +1,6 @@
 
 import React,{Component} from 'react'
 import {
-   
   Text,
   View,
   TouchableOpacity,
@@ -12,8 +11,6 @@ import {
   TextInput
 } from 'react-native'
 import Selection from 'react-native-selection'
-
-
 import firebase from 'firebase'
 import RadioButton from 'react-native-radio-button'
 
@@ -23,16 +20,12 @@ const firebaseConfig={
     databaseURL: "https://socialapp-e5e09.firebaseio.com",
     storageBucket: "socialapp-e5e09.appspot.com",
      messagingSenderId: "306902668184"
-
 }
-
 const firebaseApp=firebase.initializeApp(firebaseConfig);
- 
 
 export default class Signup extends Component{
 
-    
-    constructor(props){
+   constructor(props){
         
         super(props)
        // var _envi={flag:'asd'}
@@ -49,8 +42,7 @@ export default class Signup extends Component{
             City:'',
             state1:false,
             state2:false
-        };
-       
+        };       
     }  
        async signup(){      
             
