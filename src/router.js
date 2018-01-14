@@ -44,10 +44,7 @@ import Contactus from './contactus'
 export default class Router extends Component {
    
    constructor(props){
-    super(props)
-     
-    
-    
+    super(props)    
   }
    
    render() {
@@ -55,7 +52,6 @@ export default class Router extends Component {
          <Navigator
             initialRoute={{name:'Login'}}
             renderScene = { this.renderScene }
-           
          />
       );
    }
@@ -73,7 +69,6 @@ export default class Router extends Component {
                 <Update navigator = {navigator} 
                      
                 />
-            
             )
       }
         if(route.name == 'Imageupload') {
@@ -290,5 +285,3 @@ export default class Router extends Component {
       }
    }
 }
-
-
