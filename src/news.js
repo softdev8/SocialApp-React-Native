@@ -39,15 +39,10 @@ export default class News extends Component{
                         _key:aa.key,
                         _val:aa.val()
                     });
-                })
-
-            
-           
-            
+                })          
              this.setState({
 
                     dataSource: this.state.dataSource.cloneWithRows(messages)
-
             });
 
         }.bind(this));
