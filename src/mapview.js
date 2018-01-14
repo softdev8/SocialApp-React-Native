@@ -10,6 +10,7 @@ import {
 } from 'react-native'
 import MapView from 'react-native-maps';
 import NavigationBar from 'react-native-navigation-bar';
+
 export default class Mapview extends Component{
     
      static get defaultProps() {
