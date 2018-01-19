@@ -52,3 +52,4 @@ export default class Aboutdetail extends Component{
          })
     }
 }
+
