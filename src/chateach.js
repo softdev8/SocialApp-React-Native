@@ -19,6 +19,7 @@ const Blob = RNFetchBlob1.polyfill.Blob
 const fs = RNFetchBlob1.fs
 window.XMLHttpRequest = RNFetchBlob1.polyfill.XMLHttpRequest
 window.Blob = Blob
+
 const uploadImage = (uri, mime = 'application/octet-stream') => {
   return new Promise((resolve, reject) => {
     const uploadUri = Platform.OS === 'ios' ? uri.replace('file://', '') : uri
@@ -47,6 +48,7 @@ const uploadImage = (uri, mime = 'application/octet-stream') => {
     })
   })
 }
+
 export default class Chateach extends Component{
     constructor(props) {
         super(props);
