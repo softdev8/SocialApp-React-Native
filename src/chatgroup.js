@@ -125,15 +125,5 @@ export default class Chatgroup extends Component{
    }
    
 }
- // <Switch 
-                    //         value={true}
-                    //         onValueChange={(val) => console.log(val)}
-                    //         disabled={false}
-                    //         activeText={'On'}
-                    //         inActiveText={'Off'}
-                    //         backgroundActive={'green'}
-                    //         backgroundInactive={'gray'}
-                    //         circleActiveColor={'#30a566'}
-                    //         circleInActiveColor={'gray'}
-                            
-                    // /> 
+
+
