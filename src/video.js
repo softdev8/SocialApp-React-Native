@@ -41,9 +41,6 @@ export default class News extends Component{
                     });
                 })
 
-            
-           
-            
              this.setState({
 
                     dataSource: this.state.dataSource.cloneWithRows(messages)
