@@ -61,8 +61,6 @@ export default class Imageupload extends Component{
     }     
 
     render() {
-            
-      
         return (
 
             <View style={{flex:9,flexDirection:'column',
