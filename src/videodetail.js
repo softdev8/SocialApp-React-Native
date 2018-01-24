@@ -76,4 +76,9 @@ export default class Videodetail extends Component{
              name:'Home'
          })
     }
+   top(){
+      this.props.navigator.push({
+             name:'Chat'
+         })
+   }
 }
