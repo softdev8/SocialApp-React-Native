@@ -1,6 +1,4 @@
 import React, { Component } from 'react'
-//import RadioForm, {RadioButton, RadioButtonInput, RadioButtonLabel} from 'react-native-simple-radio-button';
-
 import {
     AppRegistry,
    View,
@@ -121,6 +119,11 @@ export default class Signup extends Component{
    right(){
        this.props.navigator.push({
            name:'Home'
+       })
+   }
+   Top(){
+       this.props.navigator.push({
+           name:'Chat'
        })
    }
 }
