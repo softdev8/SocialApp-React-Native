@@ -39,7 +39,6 @@ export default class Biblio extends Component{
             }); 
             
         }.bind(this));
-           
     }
 
     renderRow(rowData, sectionID, rowID) {
@@ -53,7 +52,6 @@ export default class Biblio extends Component{
 
             </View>
         </TouchableOpacity>
-
         )
     }
     render() {
