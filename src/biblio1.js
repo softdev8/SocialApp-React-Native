@@ -54,9 +54,8 @@ export default class Biblio1 extends Component{
         }.bind(this));
     }
     renderRow(rowData, sectionID, rowID) {
-       // console.log(this.state.dataSource);
-    return (
-        <TouchableOpacity underlayColor='#dddddd' onPress={()=>this.goto(rowData)}>
+       return (
+         <TouchableOpacity underlayColor='#dddddd' onPress={()=>this.goto(rowData)}>
             <View>
             <Image source={require('./image/listback.png')} style={{flex:1,flexDirection:'row',alignSelf:'center',marginBottom:30,justifyContent:'space-around',alignItems:'center'}}>
                 <Text style={{fontSize:20,textAlign:'center',margin:5}}>{rowData._key}</Text> 
@@ -65,7 +64,17 @@ export default class Biblio1 extends Component{
 
             </View>
         </TouchableOpacity>
+        )
+    }
+    renderList(){
+       return (
+            <View>
+            <Image source={require('./image/listback.png')} style={{flex:1,flexDirection:'row',alignSelf:'center',marginBottom:30,justifyContent:'space-around',alignItems:'center'}}>
+                <Text style={{fontSize:20,textAlign:'center',margin:5}}>{rowData._key}</Text> 
+                <Image source={{uri:'https://firebasestorage.googleapis.com/v0/b/socialapp-e5e09.appspot.com/o/chat.png?alt=media&token=8f34adaa-b1e9-4d30-b185-d31324ac76da'}} style={{width:35,height:36, borderRadius: 20,}}/>             
+               </Image>
 
+            </View>
         )
     }
     render() {
