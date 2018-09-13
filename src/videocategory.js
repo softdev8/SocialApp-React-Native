@@ -32,7 +32,6 @@ export default class videocategory extends Component{
              };
      }
      componentWillMount() {
-        // alert(this.props.content)
         this.dataRef = firebase.database().ref('video/'+this.props.category);
         this.dataRef.on('value', function(snapshot){
              var messages = [];
@@ -49,9 +48,9 @@ export default class videocategory extends Component{
             });
 
         }.bind(this));
+         alert(this.props.content)
     }
     render(){
-        
         return(
                 <View >
             <Image source={require('./image/signback.png')}>
@@ -91,9 +90,7 @@ renderRow(rowData, sectionID, rowID) {
 
             </View>
         </TouchableOpacity>
-
-        )
-
+      )
     }
     goto(x){
         //alert(x._val);
