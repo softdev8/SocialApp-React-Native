@@ -1,13 +1,5 @@
 import React, { Component } from 'react'
-import {
-   View,
-   Text,
-   Image,
-   TextInput,
-   TouchableOpacity,
-   ToastAndroid,
-   ScrollView
-} from 'react-native'
+import { View, Text, Image, TextInput, TouchableOpacity, ToastAndroid, ScrollView } from 'react-native'
 import NavigationBar from 'react-native-navigation-bar';
 import Video from 'react-native-video'
 export default class Videodetail extends Component{
@@ -20,15 +12,14 @@ export default class Videodetail extends Component{
       videoUrl: '',
     };
 }
-    
-     static get defaultProps() {
-          return 
-          {category;
-          content;
-        };
-     }
+static get defaultProps() {
+   return {
+      category;
+      content;
+      };
+}
      
-    render(){
+render(){
             return(
                 
                 <Image source={require('./image/signback.png')} style={{flex:1,flexDirection:'column',justifyContent:'space-around',    alignItems:'center'}}>
