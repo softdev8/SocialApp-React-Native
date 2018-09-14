@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "eslint": "eslint"
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest",
     "android-dev": "adb reverse tcp:8081 tcp:8081 && react-native run-android"
