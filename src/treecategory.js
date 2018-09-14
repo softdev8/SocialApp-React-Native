@@ -1,13 +1,5 @@
 import React, { Component } from 'react'
-import {
-   View,
-   Text,
-   Image,
-   TextInput,
-   TouchableOpacity,
-   ToastAndroid,
-   ListView
-} from 'react-native'
+import { View, Text, Image,TextInput, TouchableOpacity, ToastAndroid, ListView } from 'react-native'
 import firebase from 'firebase';
 import NavigationBar from 'react-native-navigation-bar';
 export default class Treecategory extends Component{
@@ -38,10 +30,8 @@ export default class Treecategory extends Component{
           })
            this.setState({
                     dataSource: this.state.dataSource.cloneWithRows(messages)
-            }); 
-            
-        }.bind(this));
-           
+            });             
+        }.bind(this));           
     }
     renderRow(rowData, sectionID, rowID) {
       
