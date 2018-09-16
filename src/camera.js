@@ -8,8 +8,9 @@ import Camera from 'react-native-camera'
 
 // Camra option
 export default Camera = (props) => {
-   constructor(){
-      console.log("Camera Open Checking...")
+   constructor(props){
+      super(props);
+      console.log("Camera Open Checking...");
    }
    return (
       <View style = {styles.container}>
