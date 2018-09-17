@@ -1,13 +1,5 @@
 import React, { Component } from 'react'
-import {
-   View,
-   Text,
-   Image,
-   TextInput,
-   TouchableOpacity,
-   ToastAndroid,
-   ListView
-} from 'react-native'
+import { View, Text, Image, TextInput, TouchableOpacity, ToastAndroid, ListView } from 'react-native'
 import firebase from 'firebase';
 import NavigationBar from 'react-native-navigation-bar';
 import SearchBar from 'react-native-material-design-searchbar';
@@ -28,13 +20,12 @@ export default class Namemap extends Component{
 
 
         componentDidMount() {      
-        var s
-        var data=firebase.database().ref('users/');
-        var uid=firebase.auth().currentUser.uid;
+            var s
+            var data=firebase.database().ref('users/');
+            var uid=firebase.auth().currentUser.uid;
                  var aaa=data.on('value',function(snap){
-                  s=snap.child(uid+'/sex').val()                
-               
-                })      
+                  s=snap.child(uid+'/sex').val()
+           })      
       
         data.on('value', function(snapshot){
              var messages = [];             
