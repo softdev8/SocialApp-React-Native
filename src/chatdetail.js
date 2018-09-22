@@ -1,15 +1,5 @@
 import React, { Component } from 'react'
-import {
-   View,
-   Text,
-   Image,
-   TextInput,
-   TouchableOpacity,
-   ToastAndroid,
-   ScrollView,
-   ListView,
-   Platform
-} from 'react-native'
+import { View, Text, Image, TextInput, TouchableOpacity, ToastAndroid, ScrollView, ListView, Platform } from 'react-native'
 import firebase from 'firebase';
 import NavigationBar from 'react-native-navigation-bar'; 
 import ImagePicker from 'react-native-image-picker'
