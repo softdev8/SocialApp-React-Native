@@ -1,16 +1,5 @@
 import React, { Component } from 'react';
-import {
-    I18nManager,
-  AppRegistry,
-  StyleSheet,
-  Text,
-  View,
-  TextInput,
-  Image,
-  TouchableOpacity,
-  TouchableHightlight,
-  Navigator,
-  Switch
+import { I18nManager,  AppRegistry,  StyleSheet,  Text,  View,  TextInput,  Image,  TouchableOpacity,  TouchableHightlight,  Navigator,  Switch
 } from 'react-native';
 import firebase from 'firebase';
 import NavigationBar from 'react-native-navigation-bar';
@@ -125,6 +114,11 @@ export default class Home extends Component {
     right(){
         this.props.navigator.push({
              name:'Profile'
+         })
+    }
+    home(){
+        this.props.navigator.push({
+             name:'Home'
          })
     }
 }
