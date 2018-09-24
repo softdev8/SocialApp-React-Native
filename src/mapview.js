@@ -1,13 +1,5 @@
 import React, { Component } from 'react'
-import {
-   View,
-   Text,
-   Image,
-   TextInput,
-   TouchableOpacity,
-   ToastAndroid,
-   ScrollView
-} from 'react-native'
+import { View, Text, Image, TextInput, TouchableOpacity, ToastAndroid, ScrollView } from 'react-native'
 import MapView from 'react-native-maps';
 import NavigationBar from 'react-native-navigation-bar';
 
