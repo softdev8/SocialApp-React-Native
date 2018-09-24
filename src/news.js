@@ -41,18 +41,13 @@ export default class News extends Component{
                     });
                 })          
              this.setState({
-
                     dataSource: this.state.dataSource.cloneWithRows(messages)
             });
-
         }.bind(this));
-
     }
 
     renderRow(rowData, sectionID, rowID) {
-
        // console.log(this.state.dataSource);
-
     return (
 
         <TouchableOpacity underlayColor='#dddddd' onPress={()=>this.goto(rowData)}>
@@ -61,12 +56,8 @@ export default class News extends Component{
                 <Image source={require('./image/listback.png')} style={{flex:1,flexDirection:'row',alignSelf:'center',marginBottom:30,justifyContent:'space-around',alignItems:'center'}}>
                 <Text style={{fontSize:30,textAlign:'center',margin:10}}>{rowData._key}</Text>
                  </Image>
-               
-
             </View>
-
         </TouchableOpacity>
-
         )
 
     }
@@ -96,8 +87,7 @@ export default class News extends Component{
             />
             </Image>
             </View>
-
-        );
+      );
 
     }
     goto(x){
