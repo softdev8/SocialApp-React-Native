@@ -200,12 +200,9 @@ renderRow(rowData, sectionID, rowID) {
         this.setState({message:''})
     }
     avatar(){
-                
-            ImagePicker.showImagePicker({}, response  => { 
-                   
+            ImagePicker.showImagePicker({}, response  => {
                 uploadImage(response.uri)
                 .then((url) => {
-                      
                         var user;
                         var sex;       
                         var uid=firebase.auth().currentUser.uid;
@@ -215,7 +212,6 @@ renderRow(rowData, sectionID, rowID) {
                             sex=child.child('sex').val();                     
                         })
                         var data=firebase.database().ref('message1');
-                    
                         data.push({
                             url:url,
                             date:new Date().toString(),
@@ -225,10 +221,8 @@ renderRow(rowData, sectionID, rowID) {
                             
                         })
                 })
-                .catch(error => console.log(error))
-                
+                .catch(error => console.log(error)) 
         })
-
     }
     left(){
        this.props.navigator.push({
