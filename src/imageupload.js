@@ -52,50 +52,39 @@ const uploadImage = (uri, mime = 'application/octet-stream') => {
   })
 }
 export default class Imageupload extends Component{
-    constructor(props) {
+  
+  constructor(props) {
+    super(props);
+    this.state = { };
+  }     
 
-        super(props);
-
-        this.state = { };
-
-    }     
-
-    render() {
-        return (
-
-            <View style={{flex:9,flexDirection:'column',
-            justifyContent:'space-around',    alignItems:'center'}}>
-           <Image source={require('./image/signback.png')} >
-             <NavigationBar title={'About'}
-                    height={44}
-                    titleColor={'#fff'}
-                    backgroundColor={'#d07b79'}
-                    leftButtonIcon={require('./image/back.png')}
-                    rightButtonIcon={require('./image/mainbutton.png')}
-                    onLeftButtonPress={()=>this.left()}
-                    onRightButtonPress={()=>this.right()}
-                    />
-                    <View style={{marginTop:80}}>
-                  <TouchableOpacity onPress={()=>this.imageup()}>   
-                <Image source={require('./image/imageup.png')} style={{alignSelf:'center'}}/>
-                </TouchableOpacity>
-                </View>
-                <Text style={{fontSize:15,color:'#fff',alignSelf:'center',marginTop:30}}>Upload or Take your image</Text>
-                <Image source={require('./image/skip.png')} style={{alignSelf:'center',marginTop:70}}/>           
-                  
-            
-         
-
-                
-                </Image>
-            </View>
-
-        );
-        
-    }
-    imageup(){
-       this.setState({ uploadURL: '' })
-
+   render() {
+     return (
+       <View style={{flex:9,flexDirection:'column',
+         justifyContent:'space-around',    alignItems:'center'}}>
+         <Image source={require('./image/signback.png')} >
+         <NavigationBar title={'About'}
+           height={44}
+           titleColor={'#fff'}
+           backgroundColor={'#d07b79'}
+           leftButtonIcon={require('./image/back.png')}
+           rightButtonIcon={require('./image/mainbutton.png')}
+           onLeftButtonPress={()=>this.left()}
+           onRightButtonPress={()=>this.right()}
+         />
+         <View style={{marginTop:80}}>
+           <TouchableOpacity onPress={()=>this.imageup()}>   
+             <Image source={require('./image/imageup.png')} style={{alignSelf:'center'}}/>
+           </TouchableOpacity>
+         </View>
+         <Text style={{fontSize:15,color:'#fff',alignSelf:'center',marginTop:30}}>Upload or Take your image</Text>
+         <Image source={require('./image/skip.png')} style={{alignSelf:'center',marginTop:70}}/>           
+         </Image>
+       </View>
+    );
+  }
+  imageup(){
+    this.setState({ uploadURL: '' })
     ImagePicker.showImagePicker({}, response  => {      
       uploadImage(response.uri)
         .then((url) => {
@@ -106,25 +95,21 @@ export default class Imageupload extends Component{
           alert('Image upload success!')
           this.props.navigator.push({
             name:'Profile'
-          })
-         
-        })
-        .catch(error => console.log(error))
-        
-})
-
-    }
-     left(){
-         this.props.navigator.push({
-             name:'Profile'
-         })
-    }
-    right(){
-        this.props.navigator.push({
-             name:'Home'
-         })
-    }
-   
+        })     
+      })
+      .catch(error => console.log(error))
+    })
+  }
+  left(){
+    this.props.navigator.push({
+      name:'Profile'
+    })
+  }
+  right(){
+    this.props.navigator.push({
+      name:'Home'
+    })
+  }
 }
 const styles = StyleSheet.create({
   container: {
